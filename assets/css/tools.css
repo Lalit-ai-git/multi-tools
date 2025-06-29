@@ -1,0 +1,258 @@
+/* ===== Tool Page Styles ===== */
+.tool-title {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.tool-description {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+}
+
+.tool-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+/* Upload/Input Areas */
+.upload-area {
+    border: 2px dashed #ddd;
+    border-radius: var(--border-radius);
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.upload-area:hover, .upload-area.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.upload-area img {
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.upload-area:hover img {
+    opacity: 1;
+}
+
+/* Tool Results Sections */
+.results {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #219653;
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    border: 1px solid var(--gray-color);
+    color: var(--gray-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f1f1f1;
+    color: var(--dark-color);
+}
+
+/* Image Tool Specific */
+.image-preview-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.image-preview-container img {
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+}
+
+.image-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+/* Calculator Specific */
+.calculator-form .input-group {
+    margin-bottom: 1rem;
+}
+
+.calculator-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.calculator-form input, 
+.calculator-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+/* BMI Calculator Specific */
+.bmi-categories {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+.bmi-category {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.bmi-category.underweight {
+    color: #17a2b8;
+}
+
+.bmi-category.normal {
+    color: #28a745;
+}
+
+.bmi-category.overweight {
+    color: #ffc107;
+}
+
+.bmi-category.obese {
+    color: #dc3545;
+}
+
+/* Text Tool Specific */
+.text-area {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.text-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Related Tools */
+.related-tools {
+    margin-bottom: 2rem;
+}
+
+.related-tools .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.related-tools .list-group-item {
+    padding: 0.75rem 1.25rem;
+}
+
+.related-tools .list-group-item a {
+    color: var(--dark-color);
+}
+
+.related-tools .list-group-item a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Tool Info Sections */
+.tool-info {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+.tool-info h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.tool-info p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Tool Styles */
+@media (max-width: 768px) {
+    .tool-title {
+        font-size: 1.8rem;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
+    
+    .btn {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .tool-title {
+        font-size: 1.5rem;
+    }
+    
+    .tool-description {
+        font-size: 1rem;
+    }
+    
+    .stat-box {
+        min-width: 100px;
+    }
+}
