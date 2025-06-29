@@ -1,0 +1,27 @@
+{
+    "Image Tools": [
+        {
+            "name": "Image to PNG Converter",
+            "description": "Convert any image to PNG format with transparency support",
+            "path": "/tools/image/image-to-png.html",
+            "tags": ["image", "converter", "png", "photo", "format"]
+        },
+        {
+            "name": "Image to JPG Converter",
+            "description": "Convert images to JPG/JPEG format with quality adjustment",
+            "path": "/tools/image/image-to-jpg.html",
+            "tags": ["image", "converter", "jpg", "jpeg", "photo"]
+        },
+        ... (10 image tools)
+    ],
+    "SEO Tools": [
+        {
+            "name": "Meta Tag Generator",
+            "description": "Create perfect meta tags for SEO optimization",
+            "path": "/tools/seo/meta-tag-generator.html",
+            "tags": ["seo", "meta", "tags", "generator", "website"]
+        },
+        ... (10 SEO tools)
+    ],
+    ... (all other categories)
+}
